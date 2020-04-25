@@ -28,6 +28,7 @@ def kp(k):
 
 def wl():
 	global kbuf
+
 	f = open('.log.txt', 'a')
 	f.write(kbuf)
 	f.close()
